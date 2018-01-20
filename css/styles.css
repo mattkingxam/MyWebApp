@@ -26,8 +26,19 @@ div section{
     margin: 5px;
 }
 
+image {
+    padding: 20px;
+    margin: 5px;
+}
+
 #Education, #Employment, #Hobbies {
     border: 5px darkmagenta dashed;
     margin: 10px;
     padding: 10px;
+}
+
+.awards > ul > img {
+    background-color: green;
+    color:yellow;
+    padding: 5px;
 }
