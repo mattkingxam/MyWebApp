@@ -1,5 +1,10 @@
 body {
     background-color: lightblue;
+    font-family: Helvetica, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    color: black;
 }
 
 header {
@@ -11,9 +16,10 @@ footer section {
 }
 
 figure {
-    padding: 20px;
+    padding: 10px;
     margin: 10px;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
+    border: 1px darkorchid solid;
 }
 
 section {
@@ -21,29 +27,33 @@ section {
     padding: 10px;
 }
 
-div section{
+div section {
     border: 5px lightsalmon solid;
     margin: 5px;
 }
 
-image {
-    padding: 20px;
-    margin: 5px;
-}
-
-#shellback > img{ 
-    padding: 10px 20px 10px 50px;
+img {
+    padding: 2px;
+    margin: 0px;
     vertical-align: middle;
 }
 
-#Education, #Employment, #Hobbies {
+#shellback>img {
+    padding: 10px 20px 10px 15px;
+    vertical-align: middle;
+}
+
+#Education,
+#Employment,
+#Hobbies {
     border: 5px darkmagenta dashed;
     margin: 10px;
     padding: 10px;
 }
 
-.awards > ul > img {
-    background-color: green;
-    color:yellow;
+.awards {
+    /* background-color: green; */
+    list-style-type: none;
+    color: darkblue;
     padding: 5px;
 }
