@@ -11,6 +11,9 @@ header {
     background-color: lightskyblue;
 }
 
+
+/* select sub section of section in footer */
+
 footer section {
     background-color: rgb(214, 236, 15);
 }
@@ -43,6 +46,9 @@ img {
     vertical-align: middle;
 }
 
+
+/* Select the Eduction, Employment and Hobbies ID */
+
 #Education,
 #Employment,
 #Hobbies {
@@ -51,9 +57,33 @@ img {
     padding: 10px;
 }
 
+
+/* Select the awards class */
+
 .awards {
     /* background-color: green; */
     list-style-type: none;
     color: darkblue;
     padding: 5px;
+}
+
+
+/* all ul children with awards class */
+
+ul.awards {
+    font-size: 1em;
+}
+
+/* direct ul child of awards class */
+
+.awards>li {
+    color: red;
+    font-size: 1em;
+    padding: 0px;
+}
+
+.awards sup {
+    color: green;
+    padding: 0px;
+    margin: 0px;
 }
