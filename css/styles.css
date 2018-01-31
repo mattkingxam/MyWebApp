@@ -1,10 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: lightblue;
     font-family: Helvetica, Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 p {
     color: black;
+    font-weight: normal;
+    font-style: normal;
 }
 
 header {
@@ -19,10 +29,17 @@ footer section {
 }
 
 figure {
-    padding: 10px;
+    padding: 20px 10px 10px 10px;
     margin: 10px;
     /* background-color: whitesmoke; */
     border: 1px darkorchid solid;
+    width: 250px;
+    text-align: center;
+}
+
+.medals {
+    width: 390px;
+    margin: 10px 0px 10px 40px;
 }
 
 section {
@@ -36,9 +53,10 @@ div section {
 }
 
 img {
-    padding: 2px;
+    padding: 5px;
     margin: 0px;
     vertical-align: middle;
+    text-align: center;
 }
 
 #shellback>img {
@@ -74,16 +92,54 @@ ul.awards {
     font-size: 1em;
 }
 
+
 /* direct ul child of awards class */
 
 .awards>li {
-    color: red;
     font-size: 1em;
     padding: 0px;
+    background-color: white;
 }
 
 .awards sup {
     color: green;
     padding: 0px;
     margin: 0px;
+}
+
+
+/* adjacent sibling selector = selector + selector 
+ General sibling selector = selector ~ selector */
+
+
+/* pseudo class selectors */
+
+footer li {
+    list-style: none;
+}
+
+footer a:link,
+a:visited {
+    text-decoration: none;
+    background-color: green;
+    border: 1px solid blue;
+    color: black;
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+footer a:hover,
+a:active {
+    background-color: red;
+    color: purple;
+}
+
+footer li:nth-child(3) {
+    font-size: 1em;
+}
+
+.awards>li:nth-child(odd) {
+    background-color: goldenrod;
 }
